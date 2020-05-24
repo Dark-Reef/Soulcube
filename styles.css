@@ -48,6 +48,67 @@ h1 {
     margin: 10px;
 }
 
+.divisionTitle {
+    float: left;
+    width: 75%;
+}
+
+.divisionLogo {
+    width: 25%;
+    float: right;
+}
+
+.divisionLogo img {
+    width: 100%;
+}
+
+
+/*.divisionTitle {
+    position: relative;
+    display:inline;
+    top: 18px;
+  left: 10px;
+}
+
+.divisionR h1{
+    position: relative;
+    display:inline;
+    top: 18px;
+  left: 10px;
+}
+
+/*.divisionR p{
+    position: relative;
+    display:inline;
+    top: 18px;
+  left: 10px;
+}
+
+.divisionR img{
+    max-height: 200px; 
+    max-width: 200px;
+    float:right;
+}
+
+.divisionL h1{
+    position: relative;
+    top: 18px;
+  left: 10px;
+}
+
+/*.divisionL p{
+    position: relative;
+    display:inline;
+    top: 18px;
+  left: 10px;
+}
+
+.divisionL img{
+    max-height: 200px; 
+    max-width: 200px;
+    float:right;
+}*/
+
 .container span{
     text-transform: uppercase;
     display: block; 
@@ -79,6 +140,10 @@ h1 {
 .imageBlock {
     text-align: center;
     padding: 10px;
+}
+
+.imageLink {
+    text-decoration: none;
 }
 
 .imageGalleryBlock {
@@ -132,6 +197,9 @@ h1 {
 .homeButton {
     position: fixed;
 }
+
+
+
 
 a:link {
     color: green;
