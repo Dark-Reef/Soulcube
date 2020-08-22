@@ -1,6 +1,7 @@
 *{
     font-family: 'Comic Sans MS';
 }
+
 body {
     background-color: #2c2734;
 }
@@ -13,7 +14,16 @@ h1 {
     color: #c89cff;
 }
 
+.imageGalleryItemB h1 {
+    color: #c89cff;
+}
+
 .imageGalleryItem p {
+    color: #ae6679 ;
+    letter-spacing: 2px;
+}
+
+.imageGalleryItemB p {
     color: #ae6679 ;
     letter-spacing: 2px;
 }
@@ -40,28 +50,8 @@ h1 {
     float: left;
     margin-top: 40px;
     margin-bottom: 2%;
-}
-
-
-.container .divisions .division {
-    padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid #6a73b1 ;
-    border-bottom: 32px solid #6a73b1 ;
-    background-color: #a5b8fe  ;
-    width: 45%;
-    float: left;
-    margin: 10px;
-    display: flex;
-}
-
-
-.container .divisions .divisionN {
-    padding: 20px;
-    box-sizing: border-box;
-    width: 45%;
-    float: left;
-    margin: 10px;
+    align-content: center;
+    text-align: center;
 }
 
 .container .divisions .divisionN img {
@@ -125,11 +115,62 @@ h1 {
       margin-top: -180px;
       margin-bottom: 60px;
 }
-  
+
+@media (min-width: 600px){
+    .imageGalleryItemB {
+        text-align: center;
+        width: 40%;
+        padding: 15px;
+        display: inline-block;
+    }
+
+    .imageGalleryItemSmall {
+        text-align: center;
+        width: 20%;
+        padding: 15px;
+        display: inline-block;
+    }
+
+    .container .divisions .divisionN {
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 45%;
+        
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .imageGalleryItemB {
+        
+    }
+
+    .imageGalleryItemSmall {
+        text-align: center;
+        width: 40%;
+        padding: 15px;
+        display: inline-block;
+    }
+
+    .container .divisions .divisionN {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 90%;
+        display: inline-block;
+        margin: 10px;
+    }
+}
 
 .imageBlock {
     text-align: center;
     padding: 10px;
+}
+
+.imageBlock img{
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .imageLink {
@@ -148,14 +189,16 @@ h1 {
     display: inline-block;
 }
 
-.imageGalleryItemSmall {
-    text-align: center;
-    width: 25%;
-    padding: 15px;
-    display: inline-block;
-}
+
 
 .imageGalleryItem img {
+    float: left;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: contain;
+}
+
+.imageGalleryItemB img {
     float: left;
     max-height:100%; 
     max-width:100%;
@@ -168,6 +211,7 @@ h1 {
     max-width:100%;
     object-fit: contain;
 }
+
 
 .image {
     max-height:100%; 
@@ -184,8 +228,18 @@ h1 {
     margin: 0 auto;
 }
 
+
 .homeButton {
     position: fixed;
+    width: 10%;
+    height: 10%;
+
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.homeButton:hover {
+    opacity: 1;
 }
 
 a:link {
