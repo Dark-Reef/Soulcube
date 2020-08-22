@@ -55,6 +55,19 @@ h1 {
     display: flex;
 }
 
+
+.container .divisions .divisionN {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 45%;
+    float: left;
+    margin: 10px;
+}
+
+.container .divisions .divisionN img {
+    max-height:100%; max-width:100%;
+}
+
 .divisionTitle {
     flex: 3;
 }
