@@ -179,7 +179,23 @@ h1 {
 
 .imageGalleryBlock {
     text-align: center;
+    flex-wrap: wrap;
     padding: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 200px;*/
+  /*border-top: 3px solid #ae6679;
+  border-bottom: 3px solid #ae6679;*/
+}
+
+.imageGalleryItemB img {
+    padding: 5%;
+    flex: 1;
+    flex-basis: 45%;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: contain;
 }
 
 .imageGalleryItem {
@@ -198,12 +214,7 @@ h1 {
     object-fit: contain;
 }
 
-.imageGalleryItemB img {
-    float: left;
-    max-height:100%; 
-    max-width:100%;
-    object-fit: contain;
-}
+
 
 .imageGalleryItemSmall img {
     float: left;
