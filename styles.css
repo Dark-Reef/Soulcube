@@ -1,5 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Minecraft.ttf);
+  }
+
 *{
-    font-family: 'Comic Sans MS';
+    font-family: 'myFirstFont';
 }
 
 body {
