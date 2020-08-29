@@ -27,6 +27,23 @@ function handleVideo()
 	}
 }
 
+function handleFlipCard()
+{
+	var card = document.getElementsByClassName("flip-card");
+	for (var i = 0; i < card.length; i ++)
+	{		
+		if  (card[i] != undefined)
+		{
+			var width = card[i].getBoundingClientRect()["width"];
+			console.log( width * (9/16) + "px");
+			card[i].style.height = width * (9/16) + "px";
+		}
+	}
+}
+
 // on-resize
 window.addEventListener("resize", handleVideo);
+window.addEventListener("resize", handleFlipCard);
 handleVideo();
+handleFlipCard();
+
