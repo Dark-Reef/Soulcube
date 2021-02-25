@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(Bebas-Regular.ttf);
+    src: url(Gravity-Book.otf);
   }
 
 *{
@@ -17,7 +17,7 @@ h1 {
 }
 
 p {
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .imageGalleryItem h1 {
@@ -214,7 +214,7 @@ p {
     border-radius: 25px;
     /*padding: 5%;*/
     flex: 1;
-    flex-basis: 45%;
+    flex-basis: 20%;
     max-height:100%; 
     max-width:100%;
     object-fit: contain;
@@ -222,7 +222,7 @@ p {
 
 .imageGalleryItem {
     text-align: center;
-    width: 40%;
+    width: 20%;
     padding: 15px;
     display: inline-block;
 }
@@ -295,7 +295,7 @@ a:link {
 
   .flip-card {
     background-color: transparent;
-    width: 40%;
+    width: 20%;
     perspective: 1000px;
     object-fit: contain; /* Remove this if you don't want the 3D effect */
     display: inline-block;
